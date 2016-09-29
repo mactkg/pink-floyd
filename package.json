@@ -1,0 +1,40 @@
+{
+  "name": "pink-floyd",
+  "version": "1.0.0",
+  "description": "A personal boilerprate for progressive apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:browserSync": "browser-sync start --config .bs-config.js",
+    "watch:rollup": "rollup -c --watch",
+    "build": "rollup -c",
+    "dev": "npm-run-all --parallel watch:*"
+  },
+  "author": "mactkg <mactkg@gmail.com> (http://makerbox.net/)",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.5.0",
+    "babel-preset-es2015-rollup": "^1.2.0",
+    "babel-preset-stage-2": "^6.16.0",
+    "eslint-plugin-react": "^6.3.0",
+    "lost": "^7.1.0",
+    "npm-run-all": "^3.1.0",
+    "postcss-cssnext": "^2.8.0",
+    "postcss-size": "^1.0.0",
+    "precss": "^1.4.0",
+    "rollup": "^0.36.1",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-commonjs": "^5.0.4",
+    "rollup-plugin-env": "^0.21.2",
+    "rollup-plugin-json": "^2.0.2",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-postcss": "^0.2.0",
+    "rollup-plugin-stylus-css-modules": "^1.2.1",
+    "rollup-plugin-vue": "^2.2.3",
+    "rollup-watch": "^2.5.0",
+    "vue-devtools": "^2.0.4"
+  },
+  "dependencies": {
+    "vue": "^1.0.28"
+  }
+}

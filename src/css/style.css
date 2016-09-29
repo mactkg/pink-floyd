@@ -1,0 +1,7 @@
+.todo-default {
+  padding: 5px;
+  border-bottom: 1px solid silver;
+}
+.todo-doing {
+  background-color: floralwhite;
+}

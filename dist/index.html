@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue</title>
+  </head>
+  <body>
+    <div id="todoApp">
+      <h2>Todo with Component</h2>
+      <input type="text" v-model="todo" v-on:keyup.enter="addTodo">
+      <span>doing {{doings}} / {{todos.length}} task</span>
+      <div>
+        <todo-template v-for="t in todos" :t="t"></todo-template>
+      </div>
+    </div>
+
+    <template id="todo-template">
+      <div v-bind:class="['todo-default', doing ? 'todo-doing' : '']"
+           v-on:click="toggleDoing">
+          {{t.name}}
+      </div>
+    </template>
+    <script src="js/bundle.js" charset="utf-8"></script>
+  </body>
+</html>
